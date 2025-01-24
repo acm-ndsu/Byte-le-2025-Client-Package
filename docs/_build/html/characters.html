@@ -1,0 +1,1841 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Characters &#8212; Byte-le Royale 2025 1.0.0  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=2b91c5f0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'characters';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Making a Team" href="team.html" />
+    <link rel="prev" title="Moves" href="moves.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Byte-le Royale 2025 1.0.0  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="useful_commands.html">Useful Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">The Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stats.html">Stats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="moves.html">Moves</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Making a Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="actions.html">Taking Character Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="game_logic.html">Game Logic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scoring.html">Scoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
+<li class="toctree-l1"><a class="reference internal" href="visualizer.html">Visualizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/characters.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Characters</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class-types">Class Types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leaders">Leaders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fultra">Fultra</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moveset">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ninlil">Ninlil</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anahita">Anahita</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berry">Berry</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calmus">Calmus</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irwin">Irwin</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Moveset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generics">Generics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-attacker">Generic Attacker</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-healer">Generic Healer</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-tank">Generic Tank</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-trash">Generic Trash</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Moveset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="characters">
+<h1>Characters<a class="headerlink" href="#characters" title="Link to this heading">#</a></h1>
+<p>For drafting your team of mercenaries to win the final battle against the opposing country, you need to know who you
+can hire. Here is the collection of characters available for hire. Look into them closely and draft the best team for
+VICTORY!!!</p>
+<section id="class-types">
+<h2>Class Types<a class="headerlink" href="#class-types" title="Link to this heading">#</a></h2>
+<p>There are three (3) class types a character can be:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Class Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Attacker</p></td>
+<td><p>Focuses on dealing damage</p></td>
+</tr>
+<tr class="row-odd"><td><p>Healer</p></td>
+<td><p>Focuses on healing the team/themselves</p></td>
+</tr>
+<tr class="row-even"><td><p>Tank</p></td>
+<td><p>Focuses on taking hits and retaliating</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="leaders">
+<h2>Leaders<a class="headerlink" href="#leaders" title="Link to this heading">#</a></h2>
+<section id="fultra">
+<h3>Fultra<a class="headerlink" href="#fultra" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fultra’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Attacker</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>33</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>41</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="moveset">
+<h4>Moveset<a class="headerlink" href="#moveset" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Plasma Arrow</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>BUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>Buff Amount</p></td>
+<td><p>+1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Overhaul</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>HEAL</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Heal Points</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>Debuff Amount</p></td>
+<td><p>-3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Lighting Rod</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>ALL_OPPS</p></td>
+</tr>
+<tr class="row-odd"><td><p>Damage Points</p></td>
+<td><p>20</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="ninlil">
+<h3>Ninlil<a class="headerlink" href="#ninlil" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ninlil’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Attacker</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>46</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>47</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>37</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>30</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id1">
+<h4>Moveset<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Little Angy</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Smol Rage</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>Speed</p></td>
+</tr>
+<tr class="row-even"><td><p>Debuff Amount</p></td>
+<td><p>-3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Tiny Titan</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>Speed</p></td>
+</tr>
+<tr class="row-even"><td><p>Debuff Amount</p></td>
+<td><p>-5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="anahita">
+<h3>Anahita<a class="headerlink" href="#anahita" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Anahita’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Healer</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>42</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>38</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>50</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id2">
+<h4>Moveset<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Whirlpool</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>HEAL</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Heal Points</p></td>
+<td><p>15</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Empower Shower</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>BUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ENTIRE_TEAM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Buff Amount</p></td>
+<td><p>+2</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Oasis</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>HEAL</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ADJACENT_ALLIES</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Heal Points</p></td>
+<td><p>75</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Damage points</p></td>
+<td><p>20</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="berry">
+<h3>Berry<a class="headerlink" href="#berry" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Berry’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Healer</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>40</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>69</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id3">
+<h4>Moveset<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Healing Potion</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>HEAL</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ENTIRE_TEAM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Heal Points</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>HEAL</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Heal Points</p></td>
+<td><p>6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Debuff Potion</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Debuff Amount</p></td>
+<td><p>-2</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Buffing Potion</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>BUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ADJACENT_ALLIES</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Buff Amount</p></td>
+<td><p>+5</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect MoveType</p></td>
+<td><p>BUFF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Buff Amount</p></td>
+<td><p>+5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="calmus">
+<h3>Calmus<a class="headerlink" href="#calmus" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Calmus’ Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Tank</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>60</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>45</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>35</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>20</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id4">
+<h4>Moveset<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Flame Slash</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Flash Boost</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>BUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Buff Amount</p></td>
+<td><p>+4</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-even"><td><p>Damage Points</p></td>
+<td><p>10</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Berserk</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>BUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ENTIRE_TEAM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Buff Amount</p></td>
+<td><p>+15</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-even"><td><p>Damage Points</p></td>
+<td><p>35</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="irwin">
+<h3>Irwin<a class="headerlink" href="#irwin" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Irwin’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Tank</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>55</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>25</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id5">
+<h4>Moveset<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Striking Defense</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>BUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>Defense</p></td>
+</tr>
+<tr class="row-even"><td><p>Buff Amount</p></td>
+<td><p>+1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Weakening Strike</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>Defense</p></td>
+</tr>
+<tr class="row-even"><td><p>Debuff Amount</p></td>
+<td><p>-3</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Close Combat</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>Defense</p></td>
+</tr>
+<tr class="row-even"><td><p>Debuff Amount</p></td>
+<td><p>-15</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section id="generics">
+<h2>Generics<a class="headerlink" href="#generics" title="Link to this heading">#</a></h2>
+<section id="generic-attacker">
+<h3>Generic Attacker<a class="headerlink" href="#generic-attacker" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Generic Attacker’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Attacker</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>40</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>45</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>35</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id6">
+<h4>Moveset<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Stab</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Great Stab</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Giant Slash</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ALL_OPPS</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>Speed</p></td>
+</tr>
+<tr class="row-even"><td><p>Debuff Amount</p></td>
+<td><p>-1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="generic-healer">
+<h3>Generic Healer<a class="headerlink" href="#generic-healer" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Generic Healer’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Healer</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>39</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>34</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>36</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>41</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id7">
+<h4>Moveset<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Whack</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>First Aid</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>HEAL</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Heal Points</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Team Heal</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>HEAL</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ENTIRE_TEAM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Heal Points</p></td>
+<td><p>25</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="generic-tank">
+<h3>Generic Tank<a class="headerlink" href="#generic-tank" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Generic Tank’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Tank</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>55</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>36</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id8">
+<h4>Moveset<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Slap</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Shield Rush</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>ALL_OPPS</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Stomp</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p>Additional Damage Points</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Effect MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect TargetType</p></td>
+<td><p>SINGLE_OPP</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stat Affected</p></td>
+<td><p>Speed</p></td>
+</tr>
+<tr class="row-even"><td><p>Debuff Amount</p></td>
+<td><p>-1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="generic-trash">
+<h3>Generic Trash<a class="headerlink" href="#generic-trash" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Generic Trash’s Character Info</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Class Type</p></td>
+<td><p>Attacker</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Health</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Attack</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Base Defense</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>Base Speed</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="id9">
+<h4>Moveset<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Normal Move</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Trashed Attack</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>ATTACK</p></td>
+</tr>
+<tr class="row-odd"><td><p>Debuff Amount</p></td>
+<td><p>-10</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 1</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Trashed Defense</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>Defense</p></td>
+</tr>
+<tr class="row-odd"><td><p>Debuff Amount</p></td>
+<td><p>-10</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Special 2</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p>Trashed Speed</p></td>
+</tr>
+<tr class="row-odd"><td><p>MoveType</p></td>
+<td><p>DEBUFF</p></td>
+</tr>
+<tr class="row-even"><td><p>TargetType</p></td>
+<td><p>SELF</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cost</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-even"><td><p>Stat Affected</p></td>
+<td><p>Speed</p></td>
+</tr>
+<tr class="row-odd"><td><p>Debuff Amount</p></td>
+<td><p>-10</p></td>
+</tr>
+<tr class="row-even"><td><p>Effect</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="moves.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Moves</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="team.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Making a Team</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class-types">Class Types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#leaders">Leaders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fultra">Fultra</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#moveset">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ninlil">Ninlil</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anahita">Anahita</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#berry">Berry</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calmus">Calmus</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#irwin">Irwin</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Moveset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generics">Generics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-attacker">Generic Attacker</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-healer">Generic Healer</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-tank">Generic Tank</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Moveset</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-trash">Generic Trash</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Moveset</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By NDSU ACM Byte-le 2025 Dev Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 1974-2025, NDSU ACM.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
