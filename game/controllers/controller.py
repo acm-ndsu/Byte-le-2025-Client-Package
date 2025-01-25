@@ -23,10 +23,7 @@ class Controller:
         self.debug = False
 
     def handle_actions(self, action: ActionType, client: Player, world: GameBoard):
-        return
+        ...
 
     def debug(self, *args):
-        if self.debug and Debug.level >= self.debug_level:
-            logging.basicConfig(level=logging.DEBUGs)
-            for arg in args:
-                logging.debug(f'{self.__class__.__name__}: {arg}')
+        ...

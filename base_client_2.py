@@ -5,6 +5,7 @@ from game.commander_clash.character.character import Character
 from game.common.enums import *
 from game.common.map.game_board import GameBoard
 from game.common.team_manager import TeamManager
+from game.commander_clash.moves.move_logic import *
 
 
 class State(Enum):

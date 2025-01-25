@@ -47,41 +47,6 @@ class Move(AbstractMove):
                              f'{effect.__class__.__name__} and has the value of {effect}.')
         self.__effect: Effect | None = effect
 
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['name'] = self.name
-        data['cost'] = self.cost
-        data['effect'] = self.effect.to_json() if self.effect is not None else None
-        data['priority'] = self.priority
-
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.name: str = data['name']
-        self.cost: int = data['cost']
-
-        if data['effect'] is None:
-            self.effect: Effect | None = None
-        else:
-            # convert the int from the JSON to the proper MoveType enum
-            move_type: MoveType = MoveType(data['effect']['move_type'])
-
-            if move_type == MoveType.MOVE:
-                self.effect: Effect | None = Effect().from_json(data['effect'])
-            elif move_type == MoveType.ATTACK:
-                self.effect: AttackEffect | None = AttackEffect().from_json(data['effect'])
-            elif move_type == MoveType.HEAL:
-                self.effect: HealEffect | None = HealEffect().from_json(data['effect'])
-            elif move_type == MoveType.BUFF:
-                self.effect: BuffEffect | None = BuffEffect().from_json(data['effect'])
-            elif move_type == MoveType.DEBUFF:
-                self.effect: DebuffEffect | None = DebuffEffect().from_json(data['effect'])
-
-        self.priority = data['priority']
-
-        return self
-
 
 class Attack(Move, AbstractAttack):
     def __init__(self, name: str = '', target_type: TargetType = TargetType.SINGLE_OPP, cost: int = 0,

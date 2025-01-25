@@ -110,42 +110,6 @@ class Player(GameObject):
                 f'{self.__class__.__name__}.object_type must be ObjectType. It is a(n) {object_type.__class__.__name__} and has the value of {object_type}.')
         self.__object_type = object_type
 
-    def to_json(self) -> dict:
-        data = super().to_json()
-
-        data['functional'] = self.functional
-        data['error'] = self.error
-        data['team_name'] = self.team_name
-        data['file_name'] = self.file_name
-        data['actions'] = [act.value for act in self.actions]
-        data['team_manager'] = self.team_manager.to_json() if self.team_manager is not None else None
-
-        return data
-
-    def from_json(self, data) -> Self:
-        super().from_json(data)
-
-        self.functional = data['functional']
-        self.error = data['error']
-        self.team_name = data['team_name']
-        self.file_name = data['file_name']
-
-        self.actions: list[ActionType] = [ActionType(action) for action in data['actions']]
-        team_manager: dict | None = data['team_manager']
-        if team_manager is None:
-            self.team_manager = None
-            return self
-
-        # match case for team_manager
-        match ObjectType(team_manager['object_type']):
-            case ObjectType.TEAMMANAGER:
-                self.team_manager = TeamManager().from_json(data['team_manager'])
-            case None:
-                self.team_manager = None
-            case _:
-                raise Exception(f'Could not parse team_manager: {self.team_manager}')
-        return self
-
     # to String
     def __str__(self):
         p = f"""ID: {self.id}

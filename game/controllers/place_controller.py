@@ -10,4 +10,4 @@ class PlaceController(Controller):
         super().__init__()
 
     def handle_actions(self, action: ActionType, client: Player, world: GameBoard):
-        pass
+        ...

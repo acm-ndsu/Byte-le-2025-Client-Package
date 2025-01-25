@@ -31,7 +31,3 @@ class Tile(Occupiable):
     def __init__(self):
         super().__init__()
         self.object_type: ObjectType = ObjectType.TILE
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self

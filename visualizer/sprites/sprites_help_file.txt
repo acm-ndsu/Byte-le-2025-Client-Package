@@ -1,8 +1,0 @@
-Sprites are the python files that call on the animations for the sprites themselves from the
-static sprites.
-
-All classes in this file should inherit from pygame.sprite.Sprite and include an __init__ file with:
-super.__init__()
-self.image
-self.rect
-self.rect.topleft

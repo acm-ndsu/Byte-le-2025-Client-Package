@@ -243,76 +243,20 @@ class Character(GameObject):
         self.__index: int = index
 
     def get_nm(self):
-        return self.moveset.get_nm()
+        ...
 
     def get_s1(self):
-        return self.moveset.get_s1()
+        ...
 
     def get_s2(self):
-        return self.moveset.get_s2()
+        ...
 
     def get_opposing_country(self) -> CountryType:
         # returns the opposite country based on the given CountryType
-        return CountryType.URODA if self.country_type is CountryType.TURPIS else CountryType.TURPIS
+        ...
 
     def is_defeated(self) -> bool:
-        return self.current_health == 0
-
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['name'] = self.name
-        data['index'] = self.index
-        data['class_type'] = self.class_type.value
-        data['current_health'] = self.current_health
-        data['max_health'] = self.max_health
-        data['attack'] = self.attack.to_json()
-        data['defense'] = self.defense.to_json()
-        data['speed'] = self.speed.to_json()
-        data['rank_type'] = self.rank_type.value
-        data['special_points'] = self.special_points
-        data['took_action'] = self.took_action
-        data['country_type'] = self.__country_type.value
-        data['is_dead'] = self.is_dead
-        data['selected_move'] = self.selected_move.to_json() if self.selected_move is not None else None
-        data['position'] = self.position.to_json() if self.position is not None else None
-        data['moveset'] = self.moveset.to_json()
-
-        return data
-
-    def __from_json_helper(self, data) -> Move | None:
-        match ObjectType(data['selected_move']['object_type']):
-            case ObjectType.ATTACK_MOVE:
-                return Attack().from_json(data['selected_move'])
-            case ObjectType.HEAL_MOVE:
-                return Heal().from_json(data['selected_move'])
-            case ObjectType.BUFF_MOVE:
-                return Buff().from_json(data['selected_move'])
-            case ObjectType.DEBUFF_MOVE:
-                return Debuff().from_json(data['selected_move'])
-            case _:
-                raise ValueError(f'{self.__class__.__name__}.__from_json_helper was not able to convert the given '
-                                 f'ObjectType into a Move object: {data["object_type"]}')
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.name: str = data['name']
-        self.index: int = data['index']
-        self.class_type: ClassType = ClassType(data['class_type'])
-        self.current_health: int = data['current_health']
-        self.max_health: int = data['max_health']
-        self.attack: AttackStat = AttackStat().from_json(data['attack'])
-        self.defense: DefenseStat = DefenseStat().from_json(data['defense'])
-        self.speed: SpeedStat = SpeedStat().from_json(data['speed'])
-        self.rank_type: RankType = RankType(data['rank_type'])
-        self.special_points: int = data['special_points']
-        self.took_action = data['took_action']
-        self.country_type = CountryType(data['country_type'])
-        self.is_dead = data['is_dead']
-        self.selected_move = self.__from_json_helper(data) if data['selected_move'] is not None else None
-        self.moveset: Moveset = Moveset().from_json(data['moveset'])
-        self.position: Vector | None = None if data['position'] is None else Vector().from_json(data['position'])
-
-        return self
+        ...
 
 
 class Generic(Character):
@@ -330,13 +274,6 @@ class Generic(Character):
 
         self.rank_type: RankType = RankType.GENERIC
 
-    def to_json(self) -> dict:
-        return super().to_json()
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self
-
 
 class GenericAttacker(Generic):
     def __init__(self, name: str = '', class_type: ClassType = ClassType.ATTACKER, health: int = 1,
@@ -349,12 +286,6 @@ class GenericAttacker(Generic):
         # Object type given in char_position_generation based on country as well
         self.class_type: ClassType = ClassType.ATTACKER
 
-    def to_json(self) -> dict:
-        return super().to_json()
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self
 
 
 class GenericHealer(Generic):
@@ -368,13 +299,6 @@ class GenericHealer(Generic):
         # Object type given in char_position_generation based on country as well
         self.class_type: ClassType = ClassType.HEALER
 
-    def to_json(self) -> dict:
-        return super().to_json()
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self
-
 
 class GenericTank(Generic):
     def __init__(self, name: str = '', class_type: ClassType = ClassType.TANK, health: int = 1,
@@ -386,13 +310,6 @@ class GenericTank(Generic):
 
         # Object type given in char_position_generation based on country as well
         self.class_type: ClassType = ClassType.TANK
-
-    def to_json(self) -> dict:
-        return super().to_json()
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self
 
 
 class GenericTrash(Generic):
@@ -410,13 +327,6 @@ class GenericTrash(Generic):
                                 Debuff('Trashed Defense', TargetType.SELF, 0, None, -5, ObjectType.DEFENSE_STAT),
                                 Debuff('Trashed Speed', TargetType.SELF, 0, None, -5, ObjectType.SPEED_STAT)))
 
-    def to_json(self) -> dict:
-        return super().to_json()
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self
-
 
 class Leader(Character):
     def __init__(self, name: str = '', class_type: ClassType = ClassType.ATTACKER, health: int = 1,
@@ -427,11 +337,3 @@ class Leader(Character):
                          position, country_type, moveset)
 
         self.rank_type: RankType = RankType.LEADER
-
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self
