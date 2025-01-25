@@ -3,4 +3,4 @@ Welcome to Byte-le 2025! This is the Client Package that will be used to compete
 
 You will be connected to the server already, so all provided commands will work.
 
-If there are anyy questions, don't be afraid to message a developer in the Discord or call us over!
+If there are any questions, don't be afraid to message a developer in the Discord or call us over!
