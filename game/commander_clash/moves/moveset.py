@@ -61,49 +61,13 @@ class Moveset(GameObject):
         self.__moves = moves
 
     def get_nm(self) -> Move:
-        return self.moves['NA']
+        ...
 
     def get_s1(self) -> Move:
-        return self.moves['S1']
+        ...
 
     def get_s2(self) -> Move:
-        return self.moves['S2']
+        ...
 
     def as_dict(self) -> dict[str, Move]:
-        return self.__moves
-
-    def __tuple_to_dict(self, moves: tuple[Move, Move, Move]) -> dict[str, Move]:
-        """
-        Helper method to make the dict for the moveset.
-        """
-        keys: tuple[str, str, str] = ('NA', 'S1', 'S2')
-        return dict(zip(keys, moves))
-
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['moves'] = {move_name: move.to_json() for move_name, move in self.moves.items()}
-        return data
-
-    def __from_json_helper(self, data) -> Move:
-        # temp: ObjectType = ObjectType(data['object_type'])
-
-        match ObjectType(data['object_type']):
-            case ObjectType.ATTACK_MOVE:
-                return Attack().from_json(data)
-            case ObjectType.HEAL_MOVE:
-                return Heal().from_json(data)
-            case ObjectType.BUFF_MOVE:
-                return Buff().from_json(data)
-            case ObjectType.DEBUFF_MOVE:
-                return Debuff().from_json(data)
-            case _:
-                raise ValueError(f'{self.__class__.__name__}.__from_json_helper was not able to convert the given '
-                                 f'ObjectType into a Move object: {data["object_type"]}')
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-
-        # dictionary comprehension to recreate the dictionary of moves
-        self.moves: dict[str, Move] = {move: self.__from_json_helper(data) for move, data in data['moves'].items()}
-
-        return self
+        ...

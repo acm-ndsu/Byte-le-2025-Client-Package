@@ -34,18 +34,6 @@ class AbstractMove(GameObject):
                              f'{target_type.__class__.__name__} and has the value of {target_type}.')
         self.__target_type: TargetType = target_type
 
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['move_type'] = self.move_type.value
-        data['target_type'] = self.target_type.value
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.move_type: MoveType = MoveType(data['move_type'])
-        self.target_type: TargetType = TargetType(data['target_type'])
-        return self
-
 
 class AbstractAttack(AbstractMove):
     def __init__(self, target_type: TargetType = TargetType.SELF, damage_points: int = 0):
@@ -64,16 +52,6 @@ class AbstractAttack(AbstractMove):
                              f'{damage_points.__class__.__name__} and has the value of {damage_points}.')
         self.__damage_points: int = damage_points
 
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['damage_points'] = self.damage_points
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.damage_points: int = data['damage_points']
-        return self
-
 
 class AbstractHeal(AbstractMove):
     def __init__(self, target_type: TargetType = TargetType.SELF, heal_points: int = 0):
@@ -91,16 +69,6 @@ class AbstractHeal(AbstractMove):
             raise ValueError(f'{self.__class__.__name__}.heal_points must be an int. It is a(n) '
                              f'{heal_points.__class__.__name__} and has the value of {heal_points}.')
         self.__heal_points: int = heal_points
-
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['heal_points'] = self.heal_points
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.heal_points: int = data['heal_points']
-        return self
 
 
 class AbstractBuff(AbstractMove):
@@ -139,18 +107,6 @@ class AbstractBuff(AbstractMove):
 
         self.__stat_to_affect: ObjectType = stat_to_affect
 
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['buff_amount'] = self.buff_amount
-        data['stat_to_affect'] = self.stat_to_affect.value
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.buff_amount: int = data['buff_amount']
-        self.stat_to_affect: ObjectType = ObjectType(data['stat_to_affect'])
-        return self
-
 
 class AbstractDebuff(AbstractMove):
     def __init__(self, target_type: TargetType = TargetType.SELF, debuff_amount: int = -1,
@@ -187,15 +143,3 @@ class AbstractDebuff(AbstractMove):
                              f'{stat_to_affect.__class__.__name__} and has the value of {stat_to_affect}.')
 
         self.__stat_to_affect: ObjectType = stat_to_affect
-
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['debuff_amount'] = self.debuff_amount
-        data['stat_to_affect'] = self.stat_to_affect.value
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.debuff_amount: int = data['debuff_amount']
-        self.stat_to_affect: ObjectType = ObjectType(data['stat_to_affect'])
-        return self

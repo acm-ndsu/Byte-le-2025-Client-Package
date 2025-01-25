@@ -110,7 +110,7 @@ class Stat(GameObject):
         ...
 
     def is_minimized(self):
-        return self.value == STAT_MINIMUM
+        ...
 
     def apply_modification(self, modification_amount: int) -> None:
         """
@@ -119,20 +119,6 @@ class Stat(GameObject):
         """
         ...
 
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        data['base_value'] = self.base_value
-        data['value'] = self.value
-
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        self.base_value = data['base_value']
-        self.value = data['value']
-
-        return self
-
 
 class AttackStat(Stat):
     def __init__(self, base_value: int = 1):
@@ -140,17 +126,10 @@ class AttackStat(Stat):
         self.object_type = ObjectType.ATTACK_STAT
 
     def is_maxed(self):
-        return self.value == ATTACK_MAXIMUM
+        ...
 
     def apply_modification(self, modification_amount: int) -> None:
-        final_value: int = self.value + modification_amount
-
-        if final_value > ATTACK_MAXIMUM:
-            self.value = ATTACK_MAXIMUM
-        elif final_value < STAT_MINIMUM:
-            self.value = STAT_MINIMUM
-        else:
-            self.value = final_value
+        ...
 
 
 class DefenseStat(Stat):
@@ -159,17 +138,10 @@ class DefenseStat(Stat):
         self.object_type = ObjectType.DEFENSE_STAT
 
     def is_maxed(self):
-        return self.value == DEFENSE_MAXIMUM
+        ...
 
     def apply_modification(self, modification_amount: int) -> None:
-        final_value: int = self.value + modification_amount
-
-        if final_value > DEFENSE_MAXIMUM:
-            self.value = DEFENSE_MAXIMUM
-        elif final_value < STAT_MINIMUM:
-            self.value = STAT_MINIMUM
-        else:
-            self.value = final_value
+        ...
 
 
 class SpeedStat(Stat):
@@ -178,14 +150,7 @@ class SpeedStat(Stat):
         self.object_type = ObjectType.SPEED_STAT
 
     def is_maxed(self):
-        return self.value == SPEED_MAXIMUM
+        ...
 
     def apply_modification(self, modification_amount: int) -> None:
-        final_value: int = self.value + modification_amount
-
-        if final_value > SPEED_MAXIMUM:
-            self.value = SPEED_MAXIMUM
-        elif final_value < STAT_MINIMUM:
-            self.value = STAT_MINIMUM
-        else:
-            self.value = final_value
+        ...

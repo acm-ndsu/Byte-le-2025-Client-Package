@@ -5,6 +5,7 @@ from game.commander_clash.character.character import Character
 from game.common.enums import *
 from game.common.map.game_board import GameBoard
 from game.common.team_manager import TeamManager
+from game.commander_clash.moves.move_logic import *
 
 
 class State(Enum):
@@ -75,8 +76,6 @@ class Client(UserClient):
             action: ActionType = random.choice([ActionType.SWAP_UP, ActionType.SWAP_DOWN, ActionType.USE_NM])
 
             actions = [action]
-
-        print(f'{team_manager.team_name} action: {actions[0]}')
 
         return actions
 

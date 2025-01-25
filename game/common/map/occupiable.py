@@ -18,11 +18,3 @@ class Occupiable(GameObject):
     def __init__(self, **kwargs):
         super().__init__()
         self.object_type: ObjectType = ObjectType.OCCUPIABLE
-
-    def to_json(self) -> dict:
-        data: dict = super().to_json()
-        return data
-
-    def from_json(self, data: dict) -> Self:
-        super().from_json(data)
-        return self
