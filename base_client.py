@@ -75,8 +75,6 @@ class Client(UserClient):
 
             actions = [action]
 
-        print(f'{team_manager.team_name} action: {actions[0]}')
-
         return actions
 
     def get_my_active_char(self, team_manager: TeamManager, world: GameBoard) -> Character | None:

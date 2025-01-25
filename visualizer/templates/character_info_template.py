@@ -84,7 +84,7 @@ class CharacterInfoTemplate(InfoTemplate):
         # Get if the character is active
         active_pair_index: int = turn_log['game_board']['active_pair_index'] - 1
         if active_pair_index == -1:
-            active_pair_index = 2
+            active_pair_index = len(turn_log['game_board']['ordered_teams']) - 1
         if turn_log['game_board']['ordered_teams'][active_pair_index][character.country_type.value - 1] is None:
             self.active.transparent = True
         else:
