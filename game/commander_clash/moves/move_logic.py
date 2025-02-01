@@ -34,3 +34,11 @@ def calculate_healing(target: Character, current_move: AbstractHeal) -> int:
         If target health = 6/10, return 4 since healing 5 isn't possible
     """
     ...
+
+
+def calculate_stat_modification(target: Character, current_move: AbstractBuff | AbstractDebuff) -> int:
+    """
+    Calculates how a stat will change when the current_move's buff or debuff amount is applied to it. Returns the
+    int that will be the result of the modification.
+    """
+    ...
