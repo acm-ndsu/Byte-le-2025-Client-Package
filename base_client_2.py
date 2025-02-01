@@ -5,13 +5,11 @@ from game.commander_clash.character.character import Character
 from game.common.enums import *
 from game.common.map.game_board import GameBoard
 from game.common.team_manager import TeamManager
-from game.commander_clash.moves.move_logic import *
 
 
 class State(Enum):
     HEALTHY = auto()
     UNHEALTHY = auto()
-    ALMOST_DEAD = auto()
 
 
 class Client(UserClient):
@@ -26,7 +24,7 @@ class Client(UserClient):
         order (e.g., (Generic, Leader, Leader)), whichever selection is incorrect will be swapped with a default value
         of Generic Attacker.
         """
-        return 'Tiny Titans', (SelectGeneric.GEN_TANK, SelectLeader.NINLIL, SelectGeneric.GEN_TANK)
+        return 'Altruists', (SelectGeneric.GEN_TANK, SelectLeader.ANAHITA, SelectGeneric.GEN_ATTACKER)
 
     def first_turn_init(self, team_manager: TeamManager):
         """
@@ -57,14 +55,14 @@ class Client(UserClient):
             self.first_turn_init(team_manager)
 
         # get your active character for the turn; may be None
-        active_character = self.get_my_active_char(team_manager, world)
+        active_character: Character = self.get_my_active_char(team_manager, world)
 
-        # if there is no active character for the turn, return an empty list
+        # if there is no active character for my team on this current turn, return an empty list
         if active_character is None:
             return []
 
         # determine if the active character is healthy
-        current_state = State.HEALTHY if self.get_health_percentage(active_character) >= 0.50 else State.UNHEALTHY
+        current_state: State = State.HEALTHY if self.get_health_percentage(active_character) >= 0.50 else State.UNHEALTHY
 
         actions: list[ActionType]
 
@@ -86,6 +84,6 @@ class Client(UserClient):
         characters than the opponent.
         """
 
-        active_character = team_manager.get_active_character(world.ordered_teams, world.active_pair_index)
+        active_character: Character = team_manager.get_active_character(world.ordered_teams, world.active_pair_index)
 
         return active_character
